@@ -1,0 +1,21 @@
+.header
+  .header__main
+    .header__main__title
+      = "Katze"
+.main
+  = form_with model: @post, local: true do |f|
+    .wrapper
+      .wrapper__image
+        写真
+      .wrapper__name
+        お名前
+        = f.text_field :name, placeholder: "名前を入力"
+      .wrapper__age
+        年齢
+        = f.text_field :age, placeholder: "年齢を入力"
+      .wrapper__personality
+        性格
+        = f.text_area :personality, placeholder: "性格を入力"
+      .wrapper__condition
+        体調(去勢、ワクチンの履歴など)
+        = f.text_area :condition, placeholder: "体調を入力"
