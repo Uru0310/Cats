@@ -1,0 +1,58 @@
+.main {
+  background-color: #eeeeee;
+  width: 700px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  .wrapper {
+    font-size: 18px;
+    &__image {
+      font-size: 18px;
+      padding-bottom: 40px;
+      padding: 0 30px;
+      &__form {
+        width: 600px;
+        height: 200px;
+        padding-bottom: 50px;
+      }
+    }
+    &__name {
+      padding: 0 30px;
+      &__form {
+        width: 600px;
+        height: 40px;
+        margin-bottom: 50px;
+      }
+    }
+    &__age {
+      padding: 0 30px;
+      &__form {
+        width: 600px;
+        height: 40px;
+        margin-bottom: 50px;
+      }
+    }
+    &__personality {
+      padding: 0 30px;
+      &__form {
+        width: 600px;
+        height: 80px;
+        margin-bottom: 50px;
+      }
+    }
+    &__condition {
+      padding: 0 30px;
+      &__form {
+        width: 600px;
+        height: 80px;
+        margin-bottom: 50px;
+      }
+    }
+    &__button {
+      width: 165px;
+      margin: 0 auto;
+      &__submit {
+        width: 200px;
+      }
+    }
+  }
+}
