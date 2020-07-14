@@ -1,0 +1,42 @@
+.header
+  .header__main
+    .header__main__title
+      = "Katze"
+.wrapper
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = render "devise/shared/error_messages", resource: resource
+    .field
+      .field__label
+        = f.label :ニックネーム
+      .field__form
+        = f.text_field :nickname, class: "field__form__input", placeholder: ""
+    .field
+      .field__label
+        = f.label :苗字
+      .field__form
+        = f.text_field :lastname, class: "field__form__input", placeholder: ""
+    .field
+      .field__label
+        = f.label :名前
+      .field__form
+        = f.text_field :firstname, class: "field__form__input", placeholder: ""
+    .field
+      .field__label
+        = f.label :メールアドレス
+      .field__form
+        = f.email_field :email, class: "field__form__input", placeholder: ""
+    .field
+      .field__label
+        = f.label :パスワード
+      .field__form
+        = f.password_field :password, class: "field__form__input", placeholder: ""
+    .field
+      .field__label
+        = f.label :パスワード（確認）
+      .field__form
+        = f.password_field :password_confirmation, class: "field__form__input", placeholder: ""
+    .actions
+      = f.submit "Sign up", class: "actions__input"
+.footer
+  .footer__logo
+    = "Copyright Katze 2020"

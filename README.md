@@ -4,6 +4,7 @@
 |------|----|-------|
 |nickname|string|null: false|
 |email|string|null: false|
+|password|string|null: false|
 |firstname|sting|null: false|
 |lastname|string|null: false|
 |area_id|references|foreign_key: true|
