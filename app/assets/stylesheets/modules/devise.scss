@@ -1,0 +1,39 @@
+.wrapper {
+  font-size: 18px;
+  background-color: #eeeeee;
+  width: 700px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  margin-top: 80px;
+  .field {
+    font-size: 18px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    &__label {
+      padding-bottom: 20px;
+    }
+    &__form {
+      &__input {
+        width: 600px;
+        height: 40px;
+      }
+    }
+  }
+  .action {
+    width: 100%;
+    &__input {
+      width: 200px;
+    }
+  }
+}
+
+.top {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+}
+.user_form {
+  height: 200px;
+  float: none;
+}
