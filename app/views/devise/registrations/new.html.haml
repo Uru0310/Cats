@@ -1,7 +1,7 @@
 .header
   .header__main
     .header__main__title
-      = "Katze"
+      = link_to "Katze", root_path
 .wrapper
   = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
     = render "devise/shared/error_messages", resource: resource
