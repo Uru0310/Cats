@@ -1,7 +1,7 @@
 .header
   .header__main
     .header__main__title
-      = "Katze"
+      = link_to "Katze", root_path
 .wrapper
   .top
     %h6 アカウントをお持ちでない方はこちら
@@ -19,13 +19,5 @@
           = f.label :パスワード
         .field__form
           = f.text_field :password, class: "field__form__input", placeholder: ""
-  -# .user_form
-  -#   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  -#     .field
-  -#       .field__lower
-  -#         = f.email_field :email, class: 'field__lower__input', placeholder: 'メールアドレス'
-  -#     .field
-  -#       .field__lower
-  -#         = f.password_field :password, class: 'field__lower__input', placeholder: 'パスワード'
-  -#     .actions
-  -#       = f.submit "ログイン", class: 'submit-btn'
+        .actions
+          = f.submit "ログイン", class: 'submit-btn'
